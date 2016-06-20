@@ -140,11 +140,15 @@ void loop()
 
   // Output data to dashboard
   Particle.publish("Acceleration in X-Axis : ", String(xAccl));
+  delay(1000);
   Particle.publish("Acceleration in Y-Axis : ", String(yAccl));
+  delay(1000);
   Particle.publish("Acceleration in Z-Axis : ", String(zAccl));
   delay(1000);
   Particle.publish("Magnetic Field in X-Axis: ", String(xMag));
+  delay(1000);
   Particle.publish("Magnetic Field in Y-Axis: ", String(yMag));
+  delay(1000);
   Particle.publish("Magnetic Field in Z-Axis: ", String(zMag));
   delay(1000);
 }
